@@ -62,5 +62,5 @@ MaxEmptyLinesToKeep: 2
 PenaltyBreakBeforeFirstCallParameter: 1
 Standard: Cpp03
 TabWidth: 4
-UseTab: ForContinuationAndIndentation
+UseTab: ForIndentation
 ...
