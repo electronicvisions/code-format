@@ -70,7 +70,8 @@ disable=
     too-few-public-methods,
     too-many-instance-attributes,
     no-init,
-    locally-disabled
+    locally-disabled,
+    line-too-long   # done with pycodestyle
 
 
 [REPORTS]
