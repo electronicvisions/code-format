@@ -9,7 +9,7 @@ BinPackArguments: true
 BinPackParameters: false
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
-BreakConstructorInitializers: BeforeColon
+BreakConstructorInitializers: AfterColon
 ColumnLimit: 100
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 4
