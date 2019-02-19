@@ -60,7 +60,7 @@ IndentWidth: 4
 KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 2
 PenaltyBreakBeforeFirstCallParameter: 1
-Standard: Cpp03
+Standard: Auto
 TabWidth: 4
 UseTab: ForIndentation
 ...
