@@ -71,7 +71,8 @@ disable=
     too-many-instance-attributes,
     no-init,
     locally-disabled,
-    line-too-long
+    line-too-long,
+    fixme
 
 
 [REPORTS]
