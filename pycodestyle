@@ -1,2 +1,2 @@
 [pycodestyle]
-ignore = NONE
+ignore = W503
