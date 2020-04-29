@@ -1,22 +1,29 @@
 ---
-Language: Cpp
-BasedOnStyle: Mozilla
 AccessModifierOffset: -4
 AlignAfterOpenBracket: AlwaysBreak
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortFunctionsOnASingleLine: Inline
-BinPackArguments: true
-BinPackParameters: false
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
+BasedOnStyle: Mozilla
+BinPackArguments: true
+BinPackParameters: false
 BreakConstructorInitializers: AfterColon
 ColumnLimit: 100
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
 Cpp11BracedListStyle: true
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+Language: Cpp
+MaxEmptyLinesToKeep: 2
+PenaltyBreakBeforeFirstCallParameter: 1
 SpaceAfterCStyleCast: true
 SpaceAfterTemplateKeyword: true
+Standard: Auto
+TabWidth: 4
+UseTab: ForIndentation
 # Includes are sorted by paragraph, so one can use empty lines to
 # enforce other sorting behavior.  The following groups and their order
 # should however be considered as canon, with alphabetical sorting
@@ -56,11 +63,4 @@ IncludeCategories:
     Priority:        5
   - Regex:           '.*'
     Priority:        4
-IndentWidth: 4
-KeepEmptyLinesAtTheStartOfBlocks: false
-MaxEmptyLinesToKeep: 2
-PenaltyBreakBeforeFirstCallParameter: 1
-Standard: Auto
-TabWidth: 4
-UseTab: ForIndentation
 ...
