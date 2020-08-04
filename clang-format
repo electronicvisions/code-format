@@ -30,6 +30,10 @@ UseTab: ForIndentation
 # of lines within a group.
 # 0. #include "something.h"
 #    | main header for a source file
+# 0. #include "halbe/hal/Coordinate.h"
+#    #include "sthal/HICANN.h"
+#    #include "marocco/placement/NeuronPlacement.h"
+#    | Includes from our projects (i.e. not system path) should come first
 # 1. #include <algorithm>
 #    #include <vector>
 #    etc.
@@ -42,25 +46,16 @@ UseTab: ForIndentation
 # 3. #include <yaml-cpp/yaml.h>
 #    etc.
 #    | other libraries searched via system include path.
-# 3. #include "halbe/hal/Coordinate.h"
-#    #include "sthal/HICANN.h"
-#    etc.
-#    | Includes from other projects should come before includes from
-#    | the current project.
-# 4. #include "marocco/placement/NeuronPlacement.h"
-#    etc.
 IncludeCategories:
   # standard library
   - Regex:           '^<[^/]+>$'
-    Priority:        1
-  - Regex:           '^<boost/'
     Priority:        2
+  - Regex:           '^<boost/'
+    Priority:        3
   # other system headers
   - Regex:           '^<'
-    Priority:        3
-  # Group marocco headers after other local includes.
-  - Regex:           '^"(py)?marocco/'
-    Priority:        5
-  - Regex:           '.*'
     Priority:        4
+  # Group marocco headers after other local includes.
+  - Regex:           '.*'
+    Priority:        1
 ...
