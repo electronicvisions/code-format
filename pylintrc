@@ -72,7 +72,8 @@ disable=
     too-many-ancestors,
     no-init,
     locally-disabled,
-    fixme
+    fixme,
+    duplicate-code
 
 
 [REPORTS]
